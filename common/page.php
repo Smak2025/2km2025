@@ -46,9 +46,18 @@ class APage
                             $menu = Menu::get_menu_data();
                             if (!empty($menu)) {
                                 foreach ($menu as $item) {
-                                    print ("<a class='nav-link' href='${item['href']}'>");
-                                    print($item["name"]);
-                                    print('</a>');
+                                    if ($item["visible"] != 0) {
+                                        if (strtolower($_SERVER['SCRIPT_NAME']) != strtolower($item["href"])) {
+                                            print ("<a class='nav-link' href='${item['href']}'>");
+                                            print($item["name"]);
+                                            print('</a>');
+                                        }
+                                        else {
+                                            print ("<div class='nav-link fw-bold'>");
+                                            print ($item["name"]);
+                                            print ("</div>");
+                                        }
+                                    }
                                 }
                             }
                         ?>

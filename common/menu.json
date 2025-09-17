@@ -2,7 +2,7 @@
   {
     "name": "Главная",
     "title": "Основная страница сайта",
-    "href": "/",
+    "href": "/index.php",
     "visible": 1,
     "parent": ""
   },

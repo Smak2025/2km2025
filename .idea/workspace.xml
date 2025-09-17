@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8dfaff8-0214-4bfc-b9c5-2b7ce2f9a5c0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/info.php" afterDir="false" />
+    <list default="true" id="b8dfaff8-0214-4bfc-b9c5-2b7ce2f9a5c0" name="Changes" comment="Menu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/common/menu.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/menu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second.php" beforeDir="false" afterPath="$PROJECT_DIR$/second.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,11 +87,24 @@
       <workItem from="1757511466459" duration="8229000" />
       <workItem from="1758095380820" duration="65000" />
       <workItem from="1758095447781" duration="27000" />
-      <workItem from="1758113821372" duration="7713000" />
+      <workItem from="1758113821372" duration="10565000" />
     </task>
+    <task id="LOCAL-00001" summary="Menu">
+      <option name="closed" value="true" />
+      <created>1758121589892</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758121589893</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Menu" />
   </component>
 </project>

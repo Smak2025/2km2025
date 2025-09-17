@@ -18,7 +18,7 @@ class APage
         ?>
         <html lang="ru">
         <head>
-            <title><?php $content->create_title() ?></title>
+            <title><?php print(Menu::get_title()) ?></title>
             <link rel="stylesheet" href="css/main.css" type="text/css"/>
             <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
             <script type="application/javascript" src="js/bootstrap.bundle.min.js"></script>
@@ -70,8 +70,8 @@ class APage
 
     private function create_title(AContent $content)
     {
-        print "<div class='title'>";
-        $content->create_title();
+        print "<div class='text-center fw-bold fs-2 text-primary'>";
+        print(Menu::get_title());
         print "</div>";
     }
 

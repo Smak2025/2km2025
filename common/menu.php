@@ -19,4 +19,15 @@ class Menu
         if (self::$menu === null) self::load();
         return self::$menu;
     }
+
+    public static function get_title()
+    {
+        $menu = Menu::get_menu_data();
+        foreach ($menu as $item) {
+            if (strtolower($_SERVER['SCRIPT_NAME']) == strtolower($item["href"])) {
+                return $item["title"];
+            }
+        }
+        return "";
+    }
 }

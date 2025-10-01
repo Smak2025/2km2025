@@ -14,10 +14,10 @@
     "parent": ""
   },
   {
-    "name": "Третья страница",
-    "title": "Третья страница сайта",
-    "href": "/third.php",
-    "visible": 0,
+    "name": "Ребус",
+    "title": "Решение ребусов",
+    "href": "/rebus.php",
+    "visible": 1,
     "parent": ""
   }
 ]

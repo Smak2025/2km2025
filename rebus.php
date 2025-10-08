@@ -19,11 +19,15 @@ class Rebus extends \common\AContent {
         }
     }
     private function solve(){
-        foreach ($this->generate_dictionary(["A", "B"]) as $dict){
-            print_r($dict);
-            print("<br>\n");
+        foreach ($this-> generate_dictionary($this->letters)as $dict){
+            $expression = "";
+            foreach (mb_str_split($this->user_data)as $char){
+                $expression.= $dict[$char]??$char;
+                if($char == '=') $expression .= '=';
+            }
+            eval('$check = '.$expression.';');
+            if ($check) print($expression.'<br>');
         }
-
     }
     private function generate_dictionary($letters, $used_digits = []): Generator
     {

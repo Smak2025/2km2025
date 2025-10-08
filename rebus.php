@@ -8,6 +8,8 @@ class Rebus extends \common\AContent {
 
     private string $user_data;
     private ?bool $is_user_data_correct = null;
+
+    private array $letters = [];
     public function __construct() {
         if(isset($_POST['rebusText'])){
             $this->user_data = $_POST['rebusText'];
@@ -17,18 +19,54 @@ class Rebus extends \common\AContent {
         }
     }
     private function solve(){
+        foreach ($this->generate_dictionary(["A", "B"]) as $dict){
+            print_r($dict);
+            print("<br>\n");
+        }
 
     }
+    private function generate_dictionary($letters, $used_digits = []): Generator
+    {
+        $letters = array_values($letters);
+        $ltr = $letters[0];
+        unset($letters[0]);
+        $digits = array_values(array_diff(range(0,9), $used_digits));
+        foreach ($digits as $digit) {
+            $res = [$ltr=>$digit];
+            //print("<br>\nres = ");
+            //print_r($res);
+            $used = $used_digits;
+            $used[] = $digit;
+            if (!empty($letters)) {
+                //print("<br>\nletters = ");
+                //print_r($letters);
+                //print("<br>\nused = ");
+                //print_r($used);
+                $sub_dictionary = $this->generate_dictionary($letters, $used);
+
+                foreach ($sub_dictionary as $sub_res) {
+                    //print("<br>\nsub_res = ");
+                    //print_r($sub_res);
+                    yield array_merge($res, $sub_res);
+                }
+            } else {
+                yield $res;
+            }
+
+        }
+    }
+
+
+
     private function filter_user_data() : bool
     {
-        //$this->user_data = htmlspecialchars($this->user_data);
         $this->user_data = mb_strtoupper($this->user_data);
         $this->user_data = mb_ereg_replace("[^A-ZА-Я+*/=-]","",$this -> user_data );
         if (!preg_match('/^[A-ZА-Я]+(?:\s*[+*\/-]\s*[A-ZА-Я]+)*\s*=\s*[A-ZА-Я]+(?:\s*[+*\/-]\s*[A-ZА-Я]+)*$/', $this->user_data, $matches)){
             return false;
         }
-        $letters = array_unique(mb_str_split(mb_ereg_replace('[^A-ZА-Я]', "", $this->user_data)));
-        return sizeof($letters) <= 10;
+        $this->letters = array_unique(mb_str_split(mb_ereg_replace('[^A-ZА-Я]', "", $this->user_data)));
+        return sizeof($this->letters) <= 10;
     }
 
     public function create_content(){
@@ -45,7 +83,7 @@ class Rebus extends \common\AContent {
             <form action="rebus.php" method = "POST">
                 <div>
                     <label for="rebusText" class="form-label">Rebus Text</label>
-                    <input type="text" class="form-control border-primary" id="rebusText"  name = "rebusText" required value="<?php print($this->user_data);?>">
+                    <input type="text" class="form-control border-primary" id="rebusText"  name = "rebusText" required value="<?php if (isset($this->user_data)) print($this->user_data);?>">
                     <input type="submit" value="Solve" class="btn btn-primary m-2">
                 </div>
             </form>

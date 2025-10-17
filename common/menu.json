@@ -19,5 +19,12 @@
     "href": "/rebus.php",
     "visible": 1,
     "parent": ""
+  },
+  {
+    "name": "Пагинация",
+    "title": "Рарзбиение на страницы",
+    "href": "/pagination.php",
+    "visible": 1,
+    "parent": ""
   }
 ]

@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8dfaff8-0214-4bfc-b9c5-2b7ce2f9a5c0" name="Changes" comment="Ребус. Проверка (Eval)">
-      <change afterPath="$PROJECT_DIR$/pagination.php" afterDir="false" />
+    <list default="true" id="b8dfaff8-0214-4bfc-b9c5-2b7ce2f9a5c0" name="Changes" comment="Пагинация - начало">
+      <change afterPath="$PROJECT_DIR$/auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/common/menu.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +49,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/OpenServer/domains/2km2025&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
@@ -92,6 +93,8 @@
       <workItem from="1759566547677" duration="8000" />
       <workItem from="1759928352682" duration="10358000" />
       <workItem from="1760532820944" duration="12010000" />
+      <workItem from="1760727811251" duration="81000" />
+      <workItem from="1761139276015" duration="2290000" />
     </task>
     <task id="LOCAL-00001" summary="Menu">
       <option name="closed" value="true" />
@@ -133,7 +136,31 @@
       <option name="project" value="LOCAL" />
       <updated>1759939435229</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Пагинация - начало">
+      <option name="closed" value="true" />
+      <created>1760727832604</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1760727832604</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Пагинация - начало">
+      <option name="closed" value="true" />
+      <created>1760727848042</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1760727848042</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Пагинация - начало">
+      <option name="closed" value="true" />
+      <created>1760727868253</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1760727868253</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +172,7 @@
     <MESSAGE value="Ребус. Начало." />
     <MESSAGE value="Ребус. Генерация словаря" />
     <MESSAGE value="Ребус. Проверка (Eval)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ребус. Проверка (Eval)" />
+    <MESSAGE value="Пагинация - начало" />
+    <option name="LAST_COMMIT_MESSAGE" value="Пагинация - начало" />
   </component>
 </project>

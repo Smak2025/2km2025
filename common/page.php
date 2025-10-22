@@ -63,6 +63,9 @@ class APage
                         ?>
                     </div>
                 </div>
+                <div class="d-flex text-white">
+                    Привет, ...!
+                </div>
             </div>
         </nav>
         <?php

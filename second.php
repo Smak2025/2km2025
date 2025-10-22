@@ -8,6 +8,7 @@ class Second extends \common\AContent
     private ?string $user_text = null;
     public function __construct()
     {
+        parent::__construct();
         if (isset($_POST['val1'])) {
             $this->user_value = (int)$_POST['val1'];
         }

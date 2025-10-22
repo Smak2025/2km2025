@@ -11,6 +11,7 @@ class Rebus extends \common\AContent {
 
     private array $letters = [];
     public function __construct() {
+        parent::__construct();
         if(isset($_POST['rebusText'])){
             $this->user_data = $_POST['rebusText'];
             if ($this->is_user_data_correct = $this -> filter_user_data()){

@@ -6,12 +6,18 @@ include_once "menu.php";
 class APage
 {
     public function __construct(AContent $content){
-        $this->start_page($content);
-        $this->create_menu();
-        $this->create_title($content);
-        $this->show_content($content);
-        $this->create_footer();
-        $this->finish_page();
+        if ($content->is_opened()||isset($_SESSION['login'])){
+            $this->start_page($content);
+            $this->create_menu();
+            $this->create_title($content);
+            $this->show_content($content);
+            $this->create_footer();
+            $this->finish_page();
+        }
+        else{
+            $_SESSION['destination'] = $_SERVER['REQUEST_URI'];
+            header('Location: /auth.php');
+        }
     }
 
     private function start_page(AContent $content){
@@ -64,7 +70,12 @@ class APage
                     </div>
                 </div>
                 <div class="d-flex text-white">
-                    Привет, ...!
+                    <?php
+                        if (isset($_SESSION['login'])){
+                            print ("Привет, ${_SESSION['login']}!");
+                            print ("<a class='ps-2' href='auth.php?logout=1'>Выход</a>");
+                        }
+                    ?>
                 </div>
             </div>
         </nav>

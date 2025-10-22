@@ -26,5 +26,12 @@
     "href": "/pagination.php",
     "visible": 1,
     "parent": ""
+  },
+  {
+    "name": "Вход",
+    "title": "Авторизация",
+    "href": "/auth.php",
+    "visible": 1,
+    "parent": ""
   }
 ]

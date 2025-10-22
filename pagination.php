@@ -10,6 +10,7 @@ class Pagination extends \common\AContent {
     private ?string $error_message = null;
     private int $row_count = 10;
     public function __construct(){
+        parent::__construct();
         try {
             $this->upload_url = $this->upload_file();
             if (isset($this->upload_url))

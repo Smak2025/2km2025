@@ -12,6 +12,14 @@ class Auth extends \common\AContent {
     private ?bool $authorized = null;
     public function __construct()
     {
+        parent::__construct();
+        $this->is_opened = true;
+
+        if (isset ($_GET['logout'])){
+            unset($_SESSION['login']);
+            header('Location: index.php');
+        }
+
         if (isset($_POST['login'])){
             $this->login = htmlspecialchars($_POST['login']);
         }
@@ -20,6 +28,16 @@ class Auth extends \common\AContent {
         }
         if (isset($this->login) && isset($this->password)){
             $this->authorized = $this->autorize($this->login, $this->password);
+            if ($this->authorized){
+                $_SESSION['login'] = $this->login;
+                if (isset($_SESSION['destination'])){
+                    $dest = $_SESSION['destination'];
+                    unset($_SESSION['destination']);
+                    header("Location: $dest");
+                } else {
+                    header("Location: /");
+                }
+            }
         }
 
     }

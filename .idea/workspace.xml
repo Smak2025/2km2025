@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8dfaff8-0214-4bfc-b9c5-2b7ce2f9a5c0" name="Changes" comment="Авторизация - оформление  приветствия пользователя в строке меню">
+    <list default="true" id="b8dfaff8-0214-4bfc-b9c5-2b7ce2f9a5c0" name="Changes" comment="Авторизация">
+      <change afterPath="$PROJECT_DIR$/reg.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/content.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/common/menu.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/pagination.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rebus.php" beforeDir="false" afterPath="$PROJECT_DIR$/rebus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second.php" beforeDir="false" afterPath="$PROJECT_DIR$/second.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +96,8 @@
       <workItem from="1759928352682" duration="10358000" />
       <workItem from="1760532820944" duration="12010000" />
       <workItem from="1760727811251" duration="81000" />
-      <workItem from="1761139276015" duration="8734000" />
+      <workItem from="1761139276015" duration="9548000" />
+      <workItem from="1761743001067" duration="10157000" />
     </task>
     <task id="LOCAL-00001" summary="Menu">
       <option name="closed" value="true" />
@@ -183,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761143203319</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Авторизация">
+      <option name="closed" value="true" />
+      <created>1761148828805</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1761148828805</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,8 +200,8 @@
     <MESSAGE value="Ребус. Генерация словаря" />
     <MESSAGE value="Ребус. Проверка (Eval)" />
     <MESSAGE value="Пагинация - начало" />
-    <MESSAGE value="Авторизация" />
     <MESSAGE value="Авторизация - оформление  приветствия пользователя в строке меню" />
-    <option name="LAST_COMMIT_MESSAGE" value="Авторизация - оформление  приветствия пользователя в строке меню" />
+    <MESSAGE value="Авторизация" />
+    <option name="LAST_COMMIT_MESSAGE" value="Авторизация" />
   </component>
 </project>

@@ -5,8 +5,6 @@ include_once "common/page.php";
 class Auth extends \common\AContent {
     // Ниже временно расположены переменные с корректными логином и паролем.
     // В дальнейшем соответствующие данные нужно будет получать из базы данных.
-    private $correct_login = "user";
-    private $correct_password = "pwd12345";
     private $login;
     private $password;
     private ?bool $authorized = null;
@@ -43,7 +41,20 @@ class Auth extends \common\AContent {
     }
 
     private function autorize($login, $password): bool{
-        return $login == $this->correct_login && $password == $this->correct_password;
+        // return $login == $this->correct_login && $password == $this->correct_password;
+        $f = fopen("users/users.json", "r");
+        while(!feof($f)) {
+            $data = fgets($f);
+            $user = json_decode($data,true);
+            if(isset($user['username']) && $user['username'] == $login) {
+                if (isset($user['password']) && password_verify($password,$user['password'])) {
+                    fclose($f);
+                    return true;
+                }
+            }
+        }
+        fclose($f);
+        return false;
     }
 
     public function create_content(): void

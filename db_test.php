@@ -15,7 +15,7 @@ class DbTest extends \common\AContent
         try {
             $this->helper = DbHelper::getInstance();
             $this->helper->createStudentTable();
-            $this->helper->addStudent('Иван', 'Иванов', "2001-05-30", '05-410');//\');DELETE FROM students;--');
+            $this->helper->addStudent('Иван', 'Иванов', "2001-05-30", '05-410\');DELETE FROM students;--');
         } catch (\PDOException $e) {
             $this->conn_error = $e->getMessage();
         }

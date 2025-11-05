@@ -59,6 +59,7 @@ class DbHelper
             $this->conn->commit();
         } catch (\PDOException $e) {
             $this->conn->rollBack();
+            throw new \PDOException($e->getMessage());
         }
     }
 

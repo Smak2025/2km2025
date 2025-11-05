@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8dfaff8-0214-4bfc-b9c5-2b7ce2f9a5c0" name="Changes" comment="Авторизация">
-      <change afterPath="$PROJECT_DIR$/reg.php" afterDir="false" />
+    <list default="true" id="b8dfaff8-0214-4bfc-b9c5-2b7ce2f9a5c0" name="Changes" comment="Авторизация + Регистрация (через файлы)">
+      <change afterPath="$PROJECT_DIR$/common/db_helper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/common/menu.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +95,9 @@
       <workItem from="1760532820944" duration="12010000" />
       <workItem from="1760727811251" duration="81000" />
       <workItem from="1761139276015" duration="9548000" />
-      <workItem from="1761743001067" duration="10157000" />
+      <workItem from="1761743001067" duration="10210000" />
+      <workItem from="1761842790780" duration="65000" />
+      <workItem from="1762351593642" duration="2493000" />
     </task>
     <task id="LOCAL-00001" summary="Menu">
       <option name="closed" value="true" />
@@ -187,7 +187,23 @@
       <option name="project" value="LOCAL" />
       <updated>1761148828805</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Авторизация + Регистрация (через файлы)">
+      <option name="closed" value="true" />
+      <created>1761753351170</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1761753351170</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Авторизация + Регистрация (через файлы)">
+      <option name="closed" value="true" />
+      <created>1761753373278</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1761753373278</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +218,7 @@
     <MESSAGE value="Пагинация - начало" />
     <MESSAGE value="Авторизация - оформление  приветствия пользователя в строке меню" />
     <MESSAGE value="Авторизация" />
-    <option name="LAST_COMMIT_MESSAGE" value="Авторизация" />
+    <MESSAGE value="Авторизация + Регистрация (через файлы)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Авторизация + Регистрация (через файлы)" />
   </component>
 </project>

@@ -128,6 +128,37 @@ class DbHelper
         }
     }
 
+    public function getAllProducts() : ?array {
+        $query  = 'SELECT * FROM products';
+        $this->conn->beginTransaction();
+        try{
+            $result = $this->conn->query($query, PDO::FETCH_ASSOC);
+            $prods = $result->fetchAll(PDO::FETCH_ASSOC);
+            $result->closeCursor();
+            $this->conn->commit();
+            return $prods;
+        } catch (\PDOException $e){
+            $this->conn->rollBack();
+            return null;
+        }
+    }
+
+    public function getSalesForProduct(int $id) : ?array {
+        $query  = 'SELECT * FROM sale WHERE sale.product_id = :id';
+        $this->conn->beginTransaction();
+        try{
+            $stmt = $this->conn->prepare($query);
+            $stmt->bindParam(':id', $id);
+            $stmt->execute();
+            $points = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $stmt->closeCursor();
+            $this->conn->commit();
+            return $points;
+        } catch (\PDOException $e){
+            $this->conn->rollBack();
+            return null;
+        }
+    }
 
 //    public function addStudentBad($firstName, $lastName, $birthDate, $groupNum){
 //        $query  = 'INSERT INTO students (firstName, lastName, birthDate, groupNum) VALUES ('.

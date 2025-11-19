@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8dfaff8-0214-4bfc-b9c5-2b7ce2f9a5c0" name="Changes" comment="Предотвращение SQL-инъекций">
-      <change afterPath="$PROJECT_DIR$/db_test_2.php" afterDir="false" />
+    <list default="true" id="b8dfaff8-0214-4bfc-b9c5-2b7ce2f9a5c0" name="Changes" comment="Работа с БД">
+      <change afterPath="$PROJECT_DIR$/image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/img.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/db_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/db_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_test.php" beforeDir="false" afterPath="$PROJECT_DIR$/db_test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info.php" beforeDir="false" afterPath="$PROJECT_DIR$/info.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +114,10 @@
       <workItem from="1761743001067" duration="10210000" />
       <workItem from="1761842790780" duration="65000" />
       <workItem from="1762351593642" duration="10583000" />
-      <workItem from="1762952516538" duration="8772000" />
+      <workItem from="1762952516538" duration="8967000" />
+      <workItem from="1763209396272" duration="612000" />
+      <workItem from="1763560142098" duration="41000" />
+      <workItem from="1763561324941" duration="7168000" />
     </task>
     <task id="LOCAL-00001" summary="Menu">
       <option name="closed" value="true" />
@@ -242,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762359448854</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Работа с БД">
+      <option name="closed" value="true" />
+      <created>1762962883197</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1762962883197</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,6 +273,7 @@
     <MESSAGE value="Авторизация + Регистрация (через файлы)" />
     <MESSAGE value="Начало работы с БД" />
     <MESSAGE value="Предотвращение SQL-инъекций" />
-    <option name="LAST_COMMIT_MESSAGE" value="Предотвращение SQL-инъекций" />
+    <MESSAGE value="Работа с БД" />
+    <option name="LAST_COMMIT_MESSAGE" value="Работа с БД" />
   </component>
 </project>
